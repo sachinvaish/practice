@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Accordian from './components/Accordian'
 import RandomCOlor from './components/RandomColor'
+import StarRating from './components/StarRating'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <h1>Practice Projects</h1>
       <Accordian/>
       <RandomCOlor/>
+      <StarRating/>
     </>
   )
 }
