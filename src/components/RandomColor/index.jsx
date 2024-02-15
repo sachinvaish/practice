@@ -41,7 +41,7 @@ export default function RandomCOlor() {
     const startShow=()=>{
         let id = setInterval(() => {
             generateGradient();
-        }, 100);
+        }, 500);
         setShow(id);
     }
 
@@ -52,13 +52,13 @@ export default function RandomCOlor() {
 
 
   return (
-    <div>
+    <div className='wrapper'>
       <h2>2. Random Color Generator</h2>
       <button onClick={generateHexColor}>Generate Hex Color</button>
       <button onClick={generateRGBColor}>Generate RGB Color</button>
       <button onClick={generateGradient}>Generate Random Gradient</button>
-      <button onClick={()=>{show?stopShow():startShow()}}>{show?'STOP':'START'} the Raindow Show</button>
-      <div className='wrapper' style={{background:color,display:'flex',justifyContent:'center',alignItems:'center'}}>
+      <button onClick={()=>{show?stopShow():startShow()}}>{show?'STOP':'START'} the Rainbow Show</button>
+      <div style={{background:color,display:'flex',justifyContent:'center',alignItems:'center', height:'80vh'}}>
       <div >
         <h1 style={{color:'white'}}>{color}</h1>
       </div>

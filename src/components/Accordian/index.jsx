@@ -23,7 +23,7 @@ export default function Accordian() {
   }
 
   return (
-    <div className="wrapper">
+    <div style={{padding:'10px 20px'}}>
       <h2>1. Accordian</h2>
       <button onClick={()=>setMultiSelection(!multiSelection)} style={{backgroundColor:`${multiSelection?'green':'grey'}`}}>Multi Selection {multiSelection?'Enabled':'Disabled'}</button>
       

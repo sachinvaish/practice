@@ -19,7 +19,7 @@ export default function StarRating() {
   }
 
   return (
-        <div className="wrapper">
+        <div style={{padding:'10px 20px'}}>
             <h2>3. Star Rating</h2>
             <h3>Rating Value = {rating}</h3>
             {[...Array(noOfStars)].map((_, i) => {
