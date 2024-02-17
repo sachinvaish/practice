@@ -46,14 +46,14 @@ export default function ImageSlider({url}){
                         <BsArrowLeftCircleFill className='arrow arrow-left' onClick={prevSlide}/>
                         {/* <img src={images[currentSlide].download_url} alt="" /> */}
                         {images && images.map((img,i)=>(
-                           (currentSlide===i) && <img key={i} src={img.download_url}/>
+                           <img key={i} src={img.download_url} className={`${currentSlide!=i && 'hide'}`}/>
                         ))}
                         
                         <BsArrowRightCircleFill className='arrow arrow-right' onClick={nextSlide}/>
             </div>}
             <span className='circle-indicator'>
                     {images && images.map((_,i)=>(
-                        <BsDot className='dots' style={{color:`${currentSlide===i?'yellow':'black'}`}} key={i} onClick={()=>setCurrentSlide(i)}/>
+                        <BsDot className='dots'  key={i} onClick={()=>setCurrentSlide(i)}/>
                     ))}
             </span>
         </div>

@@ -20,6 +20,10 @@
     transform: scale(1.2);
 }
 
+.hide{
+    display: none;
+}
+
 .arrow{
     font-size: 2rem;
     position:absolute;
@@ -37,16 +41,13 @@
     z-index: 5;
 }
 
-.circle-indicator{
-    /* display: flex; */
-    position: absolute;
-    bottom: 2 rem;
-    z-index: 5;
-    color: black;
-}
-
 .dots{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
+.circle-indicator{
+position: absolute;
+bottom: 2rem;
+z-index: 50;
+}
